@@ -1,0 +1,40 @@
+<?xml version="1.0"  ?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <gdopayment translate="title" module="gdopayment">
+                                        <title>GDOPayment</title>
+                                    </gdopayment>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <cms>
+                        <children>
+                            <gdopayment translate="title" module="gdopayment">
+                                <title>GDO</title>
+                            </gdopayment>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <cms>
+            <children>
+                <gdopayment translate="title" module="gdopayment">
+                    <title>GDO</title>
+                    <action>adminhtml/payment</action>
+                    <sort_order>20</sort_order>
+                </gdopayment>
+            </children>
+        </cms>
+    </menu>
+</config>
